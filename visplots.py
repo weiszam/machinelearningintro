@@ -63,8 +63,8 @@ def knnDecisionPlot(XTrain, yTrain, XTest, yTest, header, n_neighbors, weights =
     )
 
     trace4 = go.Scatter(
-        x = XTrain[yTrain == 1,0],
-        y = XTrain[yTrain == 1,1],
+        x = XTrain[yTrain == 0,0],
+        y = XTrain[yTrain == 0,1],
         mode = 'markers',
         marker = Marker(
             color = '#0000FF',
